@@ -1,0 +1,44 @@
+<!doctype html> <!-- 문서의 형식을 지정 --> 
+<html lang="ko"> <!-- 문서의 시작을 의미함 --> 
+<head>
+<meta charset="utf-8"> <!-- 문자셋팅:utf-8/euc-kr --> 
+<title>tag3-하이퍼링크</title></head>
+<body>
+<h1 id="top">하피어링크 연결하기:inline태그</h1>
+<!-- id="top":특정위치를 설정(책갈피) -->
+<ol>
+	<li>외부사이트 연결하기
+		<ul>
+			<li><a href="http://www.naver.com" target="_blank">네이버로 이동하기</a></li>
+			<li><a href="http://www.daum.net" target="_blank">다음으로 이동하기</a></li>
+			<li><a href="http://www.webd.kr" target="_blank">쌤홈피</a>로 이동하기</li>			
+		</ul>
+	</li>
+	<!-- 외부사이트 연결시에는 반드시 target="_blank"를 삽입하여 새창으로 띄운다. -->
+
+	<li>html문서 연결하기
+		<ul>
+			<li><a href="tag1-기본태그.html">기본태그</a></li>
+			<li><a href="tag2-표만들기.html">표만들기</a></li>
+		</ul>
+	</li>
+	<li id="img">이미지에 링크연결하기<!-- id="img":특정위치를 설정(책갈피)-->
+		<a href="http://jr.ezenac.co.kr" target="_blank"><img src="image/modify.jpg" alt="Hello!" title="이젠컴퓨터학원 홈페이지로 이동합니다."></a><br>
+		<a href="http://naver.com" target="_blank"><img src="image/modify.jpg" alt="Hello!" title="네이버로 이동합니다."></a><br>
+		<a href="http://webd.kr" target="_blank"><img src="image/modify.jpg" alt="Hello!" title="쌤홈피로 이동합니다."></a><br>
+	</li>
+	<li>메일주소 연결하기<br>
+		<a href="mailto:mink3582@naver.com">관리자에게 메일쓰기</a>
+		<!-- mailto:메일주소->전자메일을 쓸 수 있는 창(Outlook)을 연결함(웹메일이 아님) -->
+	</li>
+	<li>특정한 위치 연결하기
+		<ul>
+			<li><a href="#top">맨 위로 이동하기</a></li>
+			<li><a href="#img">이미지로 이동하기</a></li>
+		</ul>
+	</li>
+</ol>
+</body>
+</html>
+
+

@@ -1,0 +1,123 @@
+<!doctype html> <!-- 문서의 형식을 지정 --> 
+<html lang="ko"> <!-- 문서의 시작을 의미함 --> 
+<head>
+<meta charset="utf-8"> <!-- 문자셋팅:utf-8/euc-kr --> 
+<title>tag1-기본태그</title></head> <!-- 브라우저의 제목을 표시함 -->
+<body bgcolor="pink" background="image/m.gif"><!-- 본문의 시작을 의미함 -->
+본문입니다.<br><br><br><br><br><!-- 단독태그/ 줄 바꾸기/ 연속 사용시 여러번 적용 가능 -->
+본문입니다.<p><p><p><p><p><!-- 문단 띄우기/ 연속 사용시에도 한 번만 적용됨 -->
+<p align="right" color="red">본문입니다.</p>
+<hr><!-- 단독태그/ 줄 긋기 의미함 -->
+<hr width="500px" size="10px" color="red">
+
+<h1 align="center" color="red">글자관련태그-큰제목태크:block태그</h1>
+<h2>글자관련태그-큰제목태크:block태그</h2>
+<h3>글자관련태그-큰제목태크:block태그</h3>
+<h4>글자관련태그-큰제목태크:block태그</h4>
+<h5>글자관련태그-큰제목태크:block태그</h5>
+<h6>글자관련태그-큰제목태크:block태그</h6>
+<hr>
+
+<h1>글자모양 변화:inline태크</h1>
+<strong>진하게</strong><sup>입니다.</sup><br>
+<i>이탤릭체</i><sub>입니다.</sub><br>
+<small>작은글자</small>입니다.<br>
+<u>밑줄글자</u>입니다.<br>
+<del>가운데 줄이 이어진 글자</del>입니다.
+<hr>
+
+<!--
+block태그:한줄을 모두 차지하며, 자동줄바꿈 기능히 있음(<br>사용하지 않아도 됨)
+inline태그: 콘텐츠의 양만큼만 차지하며, 자동 줄 바꿈 기능이 없음(<br>태그를 사용해야 함)
+-->
+
+<h1>목록만들기:block태크</h1>
+<h3>순서가 있는 태크: 출근해서 하는 일!</h3>
+<ol type="I"> <!--type="A/a/I/i"-->
+    <li>책상위의 먼지를 닦는다.</li>
+    <li>컴퓨터를 켠다</li>
+    <li>뜨거운 차 한 잔을 마신다.</li>
+    <li>메일을 확인한다.</li>
+    	<ul type="disc">
+    		<li>daum.net</li>
+    		<li>naver.com</li>
+    		<li>nate.com</li>
+    	</ul>
+    </li>
+    <li>하루 업무 내용을 정리한다.
+    	<ol>
+    		<li>물품구매기안을 올린다.</li>
+    		<li>책상구매건 견적을 받는다.</li>
+    		<li>직원들에게 당직표를 공지한다.</li>
+    	</ol>
+    </li>
+</ol>	
+
+
+<h3>순서가 없는 태크: 좋아하는 연예인</h3>
+<ul> <!--type="disc/circle/square"-->
+    <li>김수현</li>
+    <li>소지섭</li>
+    <li>현빈</li>
+    <li>원빈</li>
+    <li>김우빈</li>
+</ul>	
+
+<h3>정의하기 위한 리스트</h3>
+<dl>
+	<dt>RAM</dt>
+		<dd>언제든지 읽고 쓸 수 있는 주기억장치</dd>
+	<dt>ROM</dt>
+		<dd>단지 읽기만 할 수 있는 메모리</dd>
+</dl>
+<hr>	
+
+<h1>이미지 삽입하기:inline태크</h1>
+<img src="image/modify.jpg" alt="Hello!" title="이미지삽입연습중입니다.">
+<!-- html파일이 있는 위치를 기준으로 하위경로 -->
+<img src="../img/patch.jpg" alt="Flowser!" width="150" height="100px">
+<!-- html파일이 있는 위치를 기준으로 상위경로 --> 
+<!-- 이미지의 실제사이즈가 변경되는 것이 아니고 사이트상에 임시로 줄여서 보여주는것임 -->
+<hr>
+
+<h1>div,span,p태그의 차이</h1>
+<h2>div,span,p태그는 그룹을 만들어주는 태그이다.</h2>
+<h3>div,p:block태그</h3>
+<div>div태그는 block형식으로 공간을 분할합니다.</div>
+<div>div태그는 block형식으로 공간을 분할합니다.</div>
+<div>div태그는 block형식으로 공간을 분할합니다.</div>
+<div>div태그는 block형식으로 공간을 분할합니다.</div>
+<div>div태그는 block형식으로 공간을 분할합니다.</div>
+<p>p태그는 block형식으로 공간을 분할하고, 문단태그로 공간을 띄운다.</p>
+<p>p태그는 block형식으로 공간을 분할하고, 문단태그로 공간을 띄운다.</p>
+<h3>span:inline태그</h1></h1>
+<span>span태그는 inline형식으로 공간을 분할합니다.</span>
+<span>span태그는 inline형식으로 공간을 분할합니다.</span>
+<span>span태그는 inline형식으로 공간을 분할합니다.</span>
+<span>span태그는 inline형식으로 공간을 분할합니다.</span>
+<span>span태그는 inline형식으로 공간을 분할합니다.</span>
+
+<div><p>그룹을 묶는 태그에는 <span>p,span,div</span>가 있다.</p></div>
+
+</body><!-- 본문의 끝을 의미함 -->
+</html> <!-- 문서의 끝을 의미함 -->
+
+<!-- 
+(1)block형식의 태그는 block형식의 태그와 inline형식의 태그를 모두 감쌀 수 있다.
+
+예를 들면,,,
+<div><p></p></div>
+<div><span></span></div>
+
+(2)inline형식의 태그는 inline형식의 태그와 텍스트만 감쌀 수 있다.
+
+예를 들면,,,
+<span><p></p></span>   -> 틀림!
+
+(3)p태그와 h태그는 같은 block형식의 태그이지만 같은 block을 감쌀 수 없다.
+
+예를 들면,,,
+<p><div></div></p>   -> 틀림!
+
+
+ -->

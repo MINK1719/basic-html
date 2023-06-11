@@ -1,0 +1,121 @@
+<!doctype html> <!-- 문서의 형식을 지정 --> 
+<html lang="ko"> <!-- 문서의 시작을 의미함 --> 
+<head>
+<meta charset="utf-8"> <!-- 문자셋팅:utf-8/euc-kr --> 
+<title>tag4-폼태그</title></head>
+<body>
+<form>
+<h1>input:inline태그</h1>
+<p>이름을 입력하세요!</p>
+<label for="aa">성명</label> <!-- label:inline태그 --> 
+<input type="text" id="aa" name="name" size="30px" placeholder="성명을 입력하세요!">
+
+<p>비밀번호를 입력하세요!</p>
+<label for="bb">비밀번호</label>
+<input type="password" id="bb" name="pw">
+
+<!-- label태그
+폼영역이 아닌 주변의 다른 영역을 클릭해도 폼양식 안에 커서가 나오게 함
+-> for의 이름과 id의 이름이 같아야 함. -->
+
+<p>인터넷을 사용하는 횟수는?</p>
+<input type="radio" id="h1" name="hour">매일5~6시간
+<input type="radio" id="h2" name="hour">매일3~4시간
+<input type="radio" id="h3" name="hour" checked="checked">매일1~2시간
+<input type="radio" id="h4" name="hour">일주일에 3시간이하
+<!-- checked="checked"->checked
+속성의 값을 반드시 입력해야 하지만, 속성과 값이 동일한 경우에는 생략할 수 있다. -->
+
+<p>관심분야를 선택하세요!!</p>
+<input type="checkbox" value="i1" name="item">교육,문화
+<input type="checkbox" value="i2" name="item">스포츠,연예
+<input type="checkbox" value="i3" name="item">정치,경제
+<input type="checkbox" value="i4" name="item">기타
+
+<!-- 라디오버튼과 체크박스는 name은 같은 질문에 대한 답이므로 이름이 같아야 하고,
+id 또는 value는 각각의 대한 이름이므로 각각 달라야 한다. -->
+
+<p>파일을 첨부하세요!</p>
+<input type="file" name="file">
+
+<p>버튼을 클릭하세요!</p>
+<input type="button" name="bt" value="이벤트 참여하기">
+
+<p>전송버튼</p>
+<input type="submit" name="submit" value="회원가입">
+
+<p>취소버튼</p>
+<input type="reset" name="reset" value="취소하기">
+
+
+<hr>
+
+<h1>fieldset:폼의 그룹을 만들때 사용(block태그)</h1>
+<fieldset>
+	<legend>개인신상</legend>   <!--생략가능-->
+	<labe>이름</labe><input type="text" name="name"><br>
+	<labe>전화번호</labe><input type="text" name="tel"><br>
+	<labe>이메일</labe><input type="text" name="email">
+</fieldset>
+<p>
+<fieldset>
+	아이디<input type="text">
+	비밀번호<input type="password">
+	<input type="image" src="image/login.jpg">
+</fieldset>
+
+
+
+
+
+<hr>
+
+<h1>select:inling태그</h1>
+<select name="job">
+	<option value="j1">당신의 직업을 선택하세요!</option>
+    <option value="j2">기술직</option>
+	<option value="j3">연구직</option>
+	<option value="j4">영업,판매</option>
+	<option value="j5">교사,교수</option>
+	<option value="j6">프로그래머</option>
+	<option value="j7">학생</option>
+	<option value="j8">주부</option>
+	<option value="j9">기타</option>
+</select>
+
+<select name="subject" size="3" multiple>
+	<option>건축공학과</option>
+    <option>기계공학과</option>
+	<option>컴퓨터공학과</option>
+	<option>화학공학과</option>
+</select>
+
+<hr>
+
+<h1>textarea:inline태그</h1>
+<textarea rows="8" cols="50" placeholder="문의사항을 입력하세요!"></textarea>
+<!-- 한줄에 50자씩 입력할 수 있는 8중크기 -->
+
+<hr>
+
+<h1>HTML5에 세분화되어 추가된 TYPE유형들</h1>
+
+<fieldset>
+	<legend>input type</legend>
+	<p><label for="search">검색 : </label><input type="search" id="search"></p>
+	<p><label for="email">이메일 : </label><input type="email" id="email"></p>
+	<p><label for="url">사이트 주소 : </label><input type="url" id="url"></p>
+	<p><label for="tel">전화번호 : </label><input type="tel" id="tel"></p>	
+    <p><label for="number">수량 : </label><input type="number" min="1" max="10" step="2" value="1" id="number"></p>
+    <p><label for="range">만족도 : </label><input type="range" min="1" max="3" id="range"></p>
+	<p><label for="date">날짜 : </label><input type="date" id="date"></p>
+	<p><label for="datetime">날짜시간(UTC) : </label><input type="datetime" id="datetime"></p>
+	<p><label for="datetime-local">날짜시간 : </label><input type="datetime-local" id="datetime-local"></p>
+	<p><label for="month">달 : </label><input type="month" id="month"></p>	
+    <p><label for="week">주 : </label><input type="week" id="week"></p>	
+    <p><label for="time">시간 : </label><input type="time" id="time"></p>	
+    <p><label for="color">색상 : </label><input type="color" id="color"></p>
+</fieldset>
+</form>
+</body>
+</html>

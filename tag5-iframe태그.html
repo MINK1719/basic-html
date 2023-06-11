@@ -1,0 +1,27 @@
+<!doctype html> <!-- 문서의 형식을 지정 --> 
+<html lang="ko"> <!-- 문서의 시작을 의미함 --> 
+<head>
+<meta charset="utf-8"> <!-- 문자셋팅:utf-8/euc-kr --> 
+<title>tag5-iframe태그:inline태크</title></head>
+<body>
+<div align="center">
+	<h3>창 속의 창 만들기</h3>
+	<iframe src="http://www.webd.kr" name="in" width="80%" height="500px" frameborder="0"></iframe>
+	<!-- iframe태그에는 align속성 적용되지 않음 -->
+
+	<table border="0" cellpadding="15">
+		<tr>
+			<td><a href="http://www.webd.kr" target="in">HOME</a></td>
+			<td><a href="tag1-기본태그.html" target="in">기본태그</a></td>
+			<td><a href="tag2-표만들기.html" target="in">표만들기</a></td>
+			<td><a href="tag3-하이퍼링크.html" target="in">하이퍼링크</a></td>
+			<td><a href="tag4-폼태그.html" target="in">폼태그</a></td>
+		</tr>
+	</table>
+</div>
+<!-- 
+<iframe>태그로 창을 만들고 창의 이름을 정해준다. -> name="창이름"
+링크를 걸때 받는 장소를 만들어준 창이름으로 연결한다. -><a href="" target="창이름"></a>
+ -->
+</body>
+</html>
