@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>실습4-움직이는마우스와화살표</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+@keyframes line_down{  /*마우스휠 animation*/
+	from{opacity:1;top:10px;}
+    to{opacity:0;top:40px;}
+}
+
+@keyframes arrow_down{  /*화살표 animation*/
+	0%{opacity:0;}
+   	100%{opacity:1}
+   	0%{opacity:0;}
+}
+
+.mouseBox{
+	position:relative;
+	top:30px;
+	width:100px;
+    height:200px;
+	background:yellow;
+}
+.mouseBox .mouse{  /*마우스모양*/
+	position:relative;  /*부모설정*/
+	width:40px;
+    height:65px;
+    margin:0 auto;
+    border:4px solid #000;
+    border-radius:30px;
+}
+.mouseBox .mouse span{  /*마우스휠모양*/
+	width:6px;
+	height:16px;
+	background:#000;
+	border-radius:20px;
+	position:absolute;
+	top:10px;
+	left:17px;
+	animation:line_down 1s infinite;
+}
+.mouseBox .arrows_down .arrow1{
+	font-size:55px;
+	position:absolute;
+	top:70px;
+	left:23px;
+	animation:arrow_down 1s infinite alternate;  /*0%->100%->0%*/
+	animation-delay:1s;
+}
+.mouseBox .arrows_down .arrow2{
+	font-size:55px;
+	position:absolute;
+	top:90px;
+	left:23px;
+	animation:arrow_down 1s infinite alternate;
+	animation-delay:1.5s;
+}
+.mouseBox .arrows_down .arrow3{
+	font-size:55px;
+	position:absolute;
+	top:110px;
+	left:23px;
+	animation:arrow_down 1s infinite alternate;
+	animation-delay:2s;
+}
+
+</style>
+</head>
+<body>
+<!--마우스 화살표 -->
+<div class="mouseBox">
+	<div class="mouse"> <!--마우스모양-->
+		<span></span> <!--마우스안의 움직이는 휠모양-->
+	</div>
+	<div class="arrows_down" >
+		<span class="material-icons arrow1">keyboard_arrow_down</span>
+		<span class="material-icons arrow2">keyboard_arrow_down</span>
+		<span class="material-icons arrow3">keyboard_arrow_down</span>
+	</div>
+</div>
+</body>
+</html>
